@@ -1,4 +1,4 @@
-# Práctica 3: DAX
+# Práctica 3. DAX
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
