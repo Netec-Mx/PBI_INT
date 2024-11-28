@@ -9,20 +9,20 @@ Al finalizar la práctica, serás capaz de:
 - 60 minutos.
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
+
 **Descripción:** En esta oportunidad se presenta un conjunto de datos que contiene los ingresos de la empresa Netflix en dólares y el número de suscriptores pagos por región. Se aplicarán diversas funciones DAX para realizar análisis y generar medidas que aporten valor al reporte.
 
 >***Nota:** Para completar este ejercicio, use el archivo que se encuentra en el repositorio de datos del curso “Netflix Revenue” de formato .csv.*
 
 ### Tarea 1. Importar los datos.
-1. Inicia Power BI Desktop. En la pestaña **Inicio** seleccionar **“Obtener datos” > “Texto/CSV”**.
+1. Iniciar Power BI Desktop. En la pestaña **Inicio** seleccionar **“Obtener datos” > “Texto/CSV”**.
 2. Navegar hasta el archivo **Netflix Revenue.csv** y dar clic en **Abrir**.
-3. En la ventana **Navegador**, podrá visualizar una vista previa de los datos. Haga clic en **Transformar datos** y, en la columna **Netflix Global Users**, elimine las **comas** de los valores y aplique el formato de **número entero** antes de importar los datos.
+3. En la ventana **Navegador**, podrá visualizar una vista previa de los datos. Hacer clic en **Transformar datos** y, en la columna **Netflix Global Users**, eliminar las **comas** de los valores y aplicar el formato de **número entero** antes de importar los datos.
 
 ### Tarea 2. Crear una tabla de calendario
 
 1. En la pestaña **Modelado**, seleccionar **Nueva tabla**.
-2. Introducir la siguiente fórmula DAX para crear una tabla de calendario basada en el rango de fechas del conjunto de datos::
+2. Introducir la siguiente fórmula DAX para crear una tabla de calendario basada en el rango de fechas del conjunto de datos:
 
         Calendar = CALENDAR(MIN('Netflix Revenue'[Date]), MAX('Netflix Revenue'[Date]))
     >***Nota:** Visualizar el resultado de la tabla calendario, seleccionando la **vista de tabla** en el panel izquierdo*.
@@ -51,12 +51,12 @@ Al finalizar la práctica, serás capaz de:
 
 ### Tarea 6. Funciones iteradores
 
-1. Utilizar la función SUMX para calcular los ingresos totales de la región UACN divididos por la cantidad de miembros en la misma región. Haz clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
+1. Utilizar la función SUMX para calcular los ingresos totales de la región UACN divididos por la cantidad de miembros en la misma región. Hacer clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
 
         Revenue UACN Members = SUMX('Netflix Revenue', 'Netflix Revenue'[UACN Revenue] / 'Netflix Revenue'[UACN Members])
 
 ### Tarea 7. Funciones de tabla y filtro
-1. Utiliza la función ALL para eliminar cualquier filtro en los ingresos globales. Haz clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
+1. Utilizar la función ALL para eliminar cualquier filtro en los ingresos globales. Hacer clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
 
         Total Revenue = CALCULATE(SUM('Netflix Revenue'[Global Revenue]), ALL('Netflix Revenue'))
 
@@ -69,17 +69,17 @@ Al finalizar la práctica, serás capaz de:
         IF(TotalRevenue > 1000000000, "High","Low")
 
 ### Tarea 9. Funciones de Time Intelligence
-1. Usar la función **SAMEPERIODLASTYEAR** para comparar los ingresos de este año con los del año pasado. Haz clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
+1. Usar la función **SAMEPERIODLASTYEAR** para comparar los ingresos de este año con los del año pasado. Hacer clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
 
         LY Revenue = CALCULATE(SUM('Netflix Revenue'[Global Revenue]), SAMEPERIODLASTYEAR('Calendar'[Date]))
 
 ### Tarea 10. Funciones de texto
 
-1. Usar la función CONCATENATE para combinar texto. Haz clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
+1. Usar la función CONCATENATE para combinar texto. Hacer clic con el botón derecho en la tabla **Netflix Revenue**, seleccionar **Nueva medida**:
 
         Formatted total Revenue = CONCATENATE("Total Revenue:", FORMAT([Total Revenue], "Currency"))
 
-### Tarea 11. Creación de visualizaciones.
+### Tarea 11. Creación de visualizaciones
 
 Las medidas que son creadas aparecen en el panel **"Datos"** con un ícono de calculadora. Las medidas se usan en algunos de los análisis de datos más comunes, los resultados calculados de las medidas cambian constantemente en respuesta a la interacción con los informes, lo que permite la exploración rápida y dinámica de datos ad hoc.
 
