@@ -1,4 +1,4 @@
-# Práctica 4: Seguridad, administración y Power BI Service
+# Práctica 4. Seguridad, administración y Power BI Service
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
@@ -9,7 +9,7 @@ Al finalizar la práctica, serás capaz de:
 - 45 minutos.
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
+
 **Descripción:** Utilizar el reporte creado en el capítulo 2 para aplicar los conceptos revisados en este capítulo de Seguridad, administración y Power Bi Service.
 
 >***Nota:** Para completar este ejercicio, use el archivo que se encuentra en el repositorio de datos del curso “Practica 2” de formato .pbix.*
@@ -24,13 +24,13 @@ Al finalizar la práctica, serás capaz de:
 
 3. Ir a la pestaña de **modelado** y seleccionar **“Administrar Roles”**.
 4. Crear los siguientes roles: 
-    - **Administrador:** Visualiza todos los datos (no requiere filtros adicionales). Renombrar el rol como **"Administrador"**.
+    - **Administrador:** Visualizar todos los datos (no requiere filtros adicionales). Renombrar el rol como **"Administrador"**.
     - **Región Norte:** Renombrar el rol como **“Región Norte”**, seleccionar la tabla de **Ventas**, En el panel **Filtrar Datos** dar clic en **Nuevo**. Configurar: 
         - **Columna:** Región (Parámetro por el que se desea filtrar)
         - **Condición:** Es igual A
         - **Valor:** Norte
     
-    - **Región Sur:** Filtra la tabla Ventas con la condición DAX: **[Región] = "Sur"**. 
+    - **Región Sur:** Filtrar la tabla Ventas con la condición DAX: **[Región] = "Sur"**. 
      
     ![Administrar roles](../images/Capitulo4/3.PNG)
 5. Guardar los roles creados.
@@ -43,13 +43,13 @@ Al finalizar la práctica, serás capaz de:
 
 ### Tarea 3. Administración de la seguridad de Power BI Service
 1. Teniendo los roles listos, en la pestaña **Inicio** dar clic a **Publicar** y seleccionar **“Mi área de trabajo”**. 
-2. Haz clic al enlace **“Abrir Practica 2.pbix en Power BI”** lo llevará directamente al reporte en Power BI Service.
+2. Hacer clic en el enlace **“Abrir Practica 2.pbix en Power BI”** lo llevará directamente al reporte en Power BI Service.
 3. En el panel de la izquierda en Power BI Service seleccionar **“Mi área de trabajo”**; Verá dos veces el nombre de **“Practica 2…”**, el conjunto de datos y el informe.
 4. Dar clic a los tres puntos a la derecha del nombre del conjunto de datos y seleccionar **Seguridad**. 
 
     ![Seguridad](../images/Capitulo4/4.PNG)
 
-5. Al lado izquierdo aparecerá todos los roles configurados previamente y al lado derecho podrá añadir a las personas o grupos del rol que tenga seleccionado.
+5. Al lado izquierdo apareceran todos los roles configurados previamente y al lado derecho podrá añadir a las personas o grupos del rol que tenga seleccionado.
 6. Añadir a algunos de los compañeros del curso o al instructor en los roles.
 
     ![Seguridad de nivel de fila](../images/Capitulo4/5.PNG)
@@ -59,13 +59,13 @@ Una vez configurada la seguridad a nivel de filas, es posible configurar el Gate
 1. Comprobar el estado actual de la actualización de datos:
     - Regresar al área de trabajo y, en el archivo del conjunto de datos, intente **actualizar**. Si se produce un error, esto indica que no se ha configurado un Gateway para acceder a los datos locales.
     ![Actualizar](../images/Capitulo4/5.1.png)
-2. Para comenzar con el proceso de configurar el Gateway dar clic a los tres puntos del conjunto de datos del reporte y seleccionar **Configuración**, en donde se desplegará una nueva pantalla con diversas opciones.
+2. Para comenzar con el proceso de configurar el Gateway, dar clic a los tres puntos del conjunto de datos del reporte y seleccionar **Configuración**, en donde se desplegará una nueva pantalla con diversas opciones.
 
     ![Configurar](../images/Capitulo4/5.2.png)
-3. En la segunda opción desplegable encontrará la opción **“Conexiones de puerta de enlace”** desplegarla y le indicará que no tiene puertas de enlace de datos.
+3. En la segunda opción desplegable encontrará la opción **“Conexiones de puerta de enlace”**, al desplegarla le indicará que no tiene puertas de enlace de datos.
 
     ![Conexiones de puerta de enlace](../images/Capitulo4/6.PNG)
-4. Para crear tu Gateway local debe ir al botón de **descargas** en la esquina superior derecha, en donde se desplegarán las opciones de descarga.
+4. Para crear el Gateway local debe ir al botón de **descargas** en la esquina superior derecha, en donde se desplegarán las opciones de descarga.
 
 5. Seleccionar Puerta de enlace de datos.
     
@@ -75,7 +75,7 @@ Una vez configurada la seguridad a nivel de filas, es posible configurar el Gate
 7. Avanzar por el proceso de instalación regular y permitir los permisos. 
 8. Al terminar le solicitará la cuenta que se usará para el Gateway y tendrá que iniciar sesión.
 9. Posterior a este proceso le consultará si quiere registrar una nueva puerta de enlace o restaurar una existente. En este caso registrará una nueva. Dar clic a **siguiente**.
-10. Poner el nombre de lu puerta de enlace y una clave en caso de que quiera recuperarla a futuro.
+10. Poner el nombre de la puerta de enlace y una clave en caso de que quiera recuperarla a futuro.
     ![On-premises](../images/Capitulo4/8.PNG)
 11. Usar el nombre **“Puerta de enlace local”** y la clave que prefiera.
     ![Puerta de enlace local](../images/Capitulo4/9.PNG)
@@ -89,7 +89,7 @@ Una vez configurada la seguridad a nivel de filas, es posible configurar el Gate
     ![Agregar a la puerta de enlace](../images/Capitulo4/11.PNG)
 16. Al desplegar este icono, le dará la opción de **“Agregar a la puerta de enlace”** que debe seleccionar para que le despliegue el menú de **Nueva conexión**. 
 17. En él deberá ingresar estos detalles:
-    - **Nombre de la conexión:** Nombre descriptivo para identificar tu conexión. Para esta práctica puedes llamarle **“Práctica”**.
+    - **Nombre de la conexión:** Nombre descriptivo para identificar la conexión. Para esta práctica puedes llamarle **“Práctica”**.
     - **Autenticación:** Tendrás que poner los datos de inicio de sesión de Windows para poder activar la conexión (esta información es manejada por Microsoft sólo para establecer la conexión al equipo local).
     - **Nivel de privacidad:**  Para este caso que es un entorno de pruebas, usaremos “Ninguno”. 
     
