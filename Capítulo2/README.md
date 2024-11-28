@@ -1,4 +1,4 @@
-# Práctica 2: Visualización
+# Práctica 2. Visualización
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
@@ -13,7 +13,6 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
 Un analista de datos necesita generar visualizaciones descriptivas e interactivas para analizar las ventas de una tienda minorista por región y categoría
 >***Nota:** Para completar este ejercicio, usa el archivo que se encuentra en el repositorio de datos del curso **“Ventas por región”** de formato .xls.*
 
@@ -24,7 +23,7 @@ Un analista de datos necesita generar visualizaciones descriptivas e interactiva
 2. Utilizar las herramientas de generación de perfiles de datos para conocer rápidamente la calidad, composición y estructura de los mismos.
 
 
-### Tarea 2. Crear visualizaciones.
+### Tarea 2. Crear visualizaciones
 Se requiere generar visualizaciones que permitan analizar las ventas y comparar la demanda de productos por región:
 1. Crear un **gráfico de barras apiladas** que muestre las ventas por región:
     - **Eje X:** Suma de Ventas.
@@ -47,7 +46,7 @@ Se requiere generar visualizaciones que permitan analizar las ventas y comparar 
 El análisis "What If" permitirá simular aumentos en las ventas de la región Norte mediante un control deslizante.
 
 1. Ir a la pestaña **Modelado** y seleccionar **“Parámetro nuevo > Intervalo numérico”** para crear un **Parámetro** 
-2. Use la siguiente configuración para generar un control deslizante que vaya desde el 100% **(valor normal)** al 200% **(valor al doble del original)**:
+2. Usar la siguiente configuración para generar un control deslizante que vaya desde el 100% **(valor normal)** al 200% **(valor al doble del original)**:
 
     - **¿Qué ajustará la variable?:** Intervalo númerico
     - **Nombre:** Aumento de precios
@@ -97,7 +96,7 @@ Es importante asegurarse de que los filtros aplicados afecten a todas las visual
    
 ### Tarea 5. Configurar Drillthrough
 
-1. Crea una nueva página que se utilizará para obtener detalles de Ventas. 
+1. Crear una nueva página que se utilizará para obtener detalles de Ventas. 
 2. Crear un objeto visual de **matriz** que detalle las ventas por región, subdividido por Vendedores y Categorías:
     - **Filas:** región, ID Vendedor.
     - **Columnas:** Categoría.
@@ -106,20 +105,20 @@ Es importante asegurarse de que los filtros aplicados afecten a todas las visual
 
     ![Obtener detalles](../images/Capitulo2/5.PNG)
 
-En este caso sólo se usará esta visualización, personalizar el tamaño de la página ayuda a no quedar con tanto espacio en blanco. Para ello, da clic en una sección en blanco de la página y selecciona **Formato de página**.
+En este caso sólo se usará esta visualización, personalizar el tamaño de la página ayuda a no quedar con tanto espacio en blanco. Para ello, dar clic en una sección en blanco de la página y seleccionar **Formato de página**.
 
 4. En la sección **configuración de lienzo**, seleccionar el **Tipo: personalizado**. Adaptar el tamaño de la página a la visualización (Alto: 300px y Ancho: 450px). Renombrar la página como **Detalles de ventas**. 
 
    ![Detalles de ventas](../images/Capitulo2/6.PNG)
 
-8. Probar la opción de **Obtención de detalles**. Haz clic derecho a un punto del gráfico de líneas en la **página 1** y aparecerá la opción **Obtener detalles > Detalles de ventas**. 
+8. Probar la opción de **Obtención de detalles**. Hacer clic derecho a un punto del gráfico de líneas en la **página 1** y aparecerá la opción **Obtener detalles > Detalles de ventas**. 
     > ***Nota:** La acción llevará a la página de detalles, filtrando la región y fecha en el que se puso el puntero.*
 
 ### Tarea 6. Aplicar formateo condicional
 
 Utilizar el formato condicional ayuda a resaltar visualmente los valores importantes o destacar tendencias en las visualizaciones. 
 1. Seleccionar el objeto visual **matriz**, en el panel de **Visualizaciones > De formato a su objeto visual**, buscar la opción **Elementos de celda**. 
-2. Activar la opción **color de fondo** con los ajustes por defecto. Con esta configuración podrá ver rápidamente los valores más altos. 
+2. Activar la opción **color de fondo** con los ajustes por defecto. Con esta configuración se podrá ver rápidamente los valores más altos. 
 7. En la opción **(fx) - formato condicional** puede personalizar los colores y límites según los valores mínimos y máximos.
 
     ![Tabla](../images/Capitulo2/7.PNG)
