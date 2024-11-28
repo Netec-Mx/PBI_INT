@@ -1,4 +1,4 @@
-# Práctica 1: Transformación.
+# Práctica 1: Transformación
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
@@ -10,22 +10,22 @@ Al finalizar la práctica, serás capaz de:
 
 
 ## Instrucciones 
-<!-- Proporciona pasos detallados sobre cómo configurar y administrar sistemas, implementar soluciones de software, realizar pruebas de seguridad, o cualquier otro escenario práctico relevante para el campo de la tecnología de la información -->
+
 **Planteamiento:** Un analista de datos practicante en la empresa “Armana” necesita analizar las ventas de los últimos 4 años. Se le proporcioa un archivo de Excel con las ventas y se le solicita preparar los datos para crear visualizaciones posteriormente. Sin embargo, el archivo requiere varias transformaciones antes de poder trabajarlo.
 
 > ***Nota:** Para completar este ejercicio, use el archivo que se encuentra en el repositorio de datos del curso “Ventas” de formato .xls.*
 
 ### Tarea 1. Obtención de datos.
-1. Abre **Power BI Desktop** y crea un informe en blanco.
-2. Selecciona la pestaña Inicio de la cinta de opciones y haz clic en **Obtener datos > Libro de Excel**.
-3. Busca la ruta del archivo (**Ventas.xlsx**) y haz clic en aceptar. Aparecerá una ventana con una previsualización de los datos. 
-4. Selecciona la tabla ejemplo y da clic en **“Transformar datos”**.
+1. Abrir **Power BI Desktop** y crear un informe en blanco.
+2. Seleccionar la pestaña Inicio de la cinta de opciones y hacer clic en **Obtener datos > Libro de Excel**.
+3. Buscar la ruta del archivo (**Ventas.xlsx**) y hacer clic en aceptar. Aparecerá una ventana con una previsualización de los datos. 
+4. Seleccionar la tabla ejemplo y dar clic en **“Transformar datos”**.
 
     ![Ventana Navegador](../images/Capitulo1/1.PNG)
 
 ### Tarea 2. Inspección de datos
 1. Usar las herramientas de generación de perfiles de datos y la ventana de visualización para conocer los datos.
-2. En la pestaña **Vista**, activa las opciones **“Calidad de columnas”**, **“Distribución de columnas”** y **“Perfil de columnas”**.
+2. En la pestaña **Vista**, activar las opciones **“Calidad de columnas”**, **“Distribución de columnas”** y **“Perfil de columnas”**.
 3. Puede desactivarlos una vez que haya obtenido sus conclusiones.
 
     ![Inspeccion de datos](../images/Capitulo1/2.PNG)
@@ -33,7 +33,7 @@ Al finalizar la práctica, serás capaz de:
 ### Tarea 3. Eliminar pasos automáticos
 Por defecto, Power Query intentará actualizar automáticamente los tipos de datos y encabezados, pero la forma del archivo fuente hace que en esta ocasión eso no sea algo deseado. 
 
-1. En el panel **Confiuración de la consulta**, Eliminar los pasos automáticos aplicados: **“Encabezados promovidos”** y **“Tipo cambiado”** dando clic a la **"X"** que se encuentra a la izquierda de cada paso.
+1. En el panel **Confiuración de la consulta**, eliminar los pasos automáticos aplicados: **“Encabezados promovidos”** y **“Tipo cambiado”** dando clic a la **"X"** que se encuentra a la izquierda de cada paso.
 
     ![Eliminar pasos](../images/Capitulo1/3.PNG)
 
@@ -78,13 +78,13 @@ Fusiona las columnas de **"Año"** y **"Cuatrimestre"** en una nueva columna.
 
 Antes de modificar el encabezado, dar clic una vez más en **"Transponer"** para tener la tabla en el sentido original.
 
-1. Ahora, cuenta con las casillas "año" y "Cuatrimestres" unidas, en la pestaña **Transformar** de Power Query seleccionar la opción: **"Usar la primera fila como encabezado"**.
+1. Ahora, cuenta con las casillas "año" y "Cuatrimestres" unidas, en la pestaña **Transformar** de Power Query, seleccionar la opción: **"Usar la primera fila como encabezado"**.
 
     ![Encabezado primera fila](../images/Capitulo1/10.PNG)
 
 ### Tarea 9. Normaliza Tabla
 Al terminar este proceso puede normalizar la tabla. 
-1. Para ello, seleccionar la columna **Cliente**, da clic derecho en su nombre y selecciona **“Anulación de dinamización de otras columnas”**.
+1. Para ello, seleccionar la columna **Cliente**, dar clic derecho en su nombre y seleccionar **“Anulación de dinamización de otras columnas”**.
 
 ![Anulacion de dinamizacion](../images/Capitulo1/11.PNG)
 
