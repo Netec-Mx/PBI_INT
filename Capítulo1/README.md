@@ -1,4 +1,4 @@
-# Práctica 1: Transformación
+# Práctica 1. Transformación
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
